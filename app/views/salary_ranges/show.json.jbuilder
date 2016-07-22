@@ -1,0 +1,1 @@
+json.partial! "salary_ranges/salary_range", salary_range: @salary_range

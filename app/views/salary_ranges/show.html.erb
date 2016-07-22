@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Min salary:</strong>
+  <%= @salary_range.min_salary %>
+</p>
+
+<p>
+  <strong>Max salary:</strong>
+  <%= @salary_range.max_salary %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @salary_range.job %>
+</p>
+
+<%= link_to 'Edit', edit_salary_range_path(@salary_range) %> |
+<%= link_to 'Back', salary_ranges_path %>

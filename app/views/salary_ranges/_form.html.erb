@@ -1,0 +1,29 @@
+<%= form_for(@salary_range) do |f| %>
+  <% if @salary_range.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@salary_range.errors.count, "error") %> prohibited this salary_range from being saved:</h2>
+
+      <ul>
+      <% @salary_range.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :min_salary %><br>
+    <%= f.text_field :min_salary %>
+  </div>
+  <div class="field">
+    <%= f.label :max_salary %><br>
+    <%= f.text_field :max_salary %>
+  </div>
+  <div class="field">
+    <%= f.label :job_id %><br>
+    <%= f.text_field :job_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

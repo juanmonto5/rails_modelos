@@ -1,0 +1,1 @@
+json.array! @salary_ranges, partial: 'salary_ranges/salary_range', as: :salary_range
